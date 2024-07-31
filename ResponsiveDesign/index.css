@@ -1,0 +1,263 @@
+/* syntax of media query
+--------------------
+@media <media-type> and(expression){} */
+/* @media screen and(min-width:1200px){}
+@media tv and (max-width:800px){} */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.wrapper{
+    width:100%;
+    margin: 0 auto;
+    /* max-width: 1180px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+       
+}
+#logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin:0 0; /* Add some space around the logo */
+    float: left;
+}
+header{
+    position: static;
+}
+
+header nav{
+    float: right;
+   
+}
+
+header nav li{
+    float: left;
+    list-style-type:none;
+    margin: 10px 20px;
+   
+
+}
+header nav li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+#main-banner,#main-banner img{
+    width: 100%;
+    
+    
+}
+.welcome_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+.menu-logo{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(67, 67, 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+    
+    
+}
+.menu-logo img{
+    width:156px;
+    display: block;
+    
+    
+}
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: rgba(67,67,77,0.5);
+    padding: 10px;
+    
+    
+}
+#home-menu{
+    background-color: rgb(67, 67, 77);
+    height: 100vh;
+}
+#home-menu ul{
+    list-style-type:none;
+}
+#home-menu ul:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#home-menu li{
+    float:left;
+    width:42%;
+    padding: 0 ;
+    margin: 20px 0 20px 8%;
+}
+#home-menu li:nth-child(odd){
+    margin:20px 8% 20px 0;
+    
+}
+#home-menu li:nth-child(even){
+    margin: 20px 8% 20px 0;
+} 
+.dish{
+    float:left;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    
+    padding-left: 15px;
+
+}
+.price{
+    float: right;
+    color: rgb(249, 124, 35);
+    font-weight: bold;
+    position: relative;
+    padding-left: 15px;
+}
+.description{
+    clear: both;
+    color: wheat;
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    position: relative;
+    padding: 10px 0 0 10px;
+    border-top: 1px solid #ddd;
+    top: 8px;  
+}
+#featured{
+    width:100%;
+    height: 100vh;
+    background-color: rgb(67, 67, 77);
+}
+#featured ul{
+    padding: 0;
+    
+}
+#featured  li{
+    float: left;
+    width:30%;
+    margin: 2vh;
+    list-style-type: none;
+}
+#featured li img{
+    width:90%;
+    height: 40vh;
+    margin-bottom: 3vh;
+}
+#featured li a{
+    text-decoration: none;
+    font-size: 3vh;
+    color: wheat;
+    float: left;
+}
+#featured li span{
+    float:right;
+    margin:2% 20% 5% 0 ;
+    color:#f8efef;
+}
+footer{
+    padding: 3vh 0;
+    background: #fefbfb;
+}
+footer ul{ 
+    padding:0;
+    list-style-type:none ;
+    margin:0 5vh; 
+}
+footer ul#copy{
+    display: flex;
+    align-items: center;
+    margin: 0 20vh;   
+}
+footer ul#copy img{
+    margin-right: 10vh;
+    height: 150px;
+}
+footer ul li{
+    margin-bottom: 5vh;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #333;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+/* media queries */
+@media only screen and (max-width:768px){
+    #logo{
+        display: flex;
+        margin: 0 40%;
+    }
+    
+    header ul li {
+        margin: 1vh 2vh;
+        
+    }
+    header ul li a{
+        font-size: 2.5vh;
+    }
+    
+    #main-banner img{
+        height: 70%;
+    }
+    .welcome_text{
+        font-size: 24px;
+        text-align: center;
+        
+    }
+    #home-menu{
+        height: auto;
+    }
+    #featured{
+        height: auto;
+    }
+    
+    #featured  li{
+        float: left;
+        width:80%;
+        
+        margin: 6vh;
+        list-style-type: none;
+    }
+}
+@media only screen and(max-width:480px){
+    .welcome_text{
+        font-size: 18vh;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    header ul li a{
+        font-size:2vh ;
+    }
+    footer ul li{
+        display: block;
+        
+    }
+}
+
+
+
+

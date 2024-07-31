@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#main_div{
+    
+    width:50%;
+    display: flex;
+    justify-content: center;/*horizontal centering */
+    align-items: center;
+    background-color: darkcyan;
+    border-radius: 3px;
+    margin: 10px 0 10px 0;
+
+}
+#main_div:hover{
+    background-color: rgb(14, 183, 146);
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+label,input,textarea,select,p{
+    margin-top: 20px;
+    
+}
+label,p{
+    font-size: larger;
+    font-weight: bold;
+}
+input{
+    
+    height: 20px;
+    border-radius: 2px;
+}
+textarea{
+    border-radius: 3px;
+}
+#button{
+    background-color: darkgreen;
+    margin-left:35%;
+
+}
+#button:hover{
+    background-color: green;
+}

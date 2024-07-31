@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .flex-container{
+    display: flex;
+     flex-direction: row;
+    flex-wrap: wrap; 
+    height: 200px;
+    background-color: blue;
+    flex-flow: row wrap;
+     justify-content: center;
+    align-items: center; 
+    align-content: space-between;
+}
+.flex-container a{
+    font-size: 20px; 
+} */
+ /* flex:flex-grow flex-shrink flex-basis; */
+.middle-box{
+    /* height: 20rem;
+    width: 20rem; */
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    
+    border: 2px solid black;
+
+    
+}
+.one .three{
+    flex:3;
+}
+.two{
+    flex: 1;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: blue;
+    
+    gap: 2rem;
+    
+}
+@media  screen and(max-width:1200px){
+    .flex-container{
+        flex-direction: column;
+       
+        gap: 1.5rem;
+        
+        
+    }
+    .middle-box{
+        height: 15rem;
+        width: 15rem;
+    }
+    
+}
+@media screen and(max-width:992px) {
+    .flex-container{
+        gap: 1rem;
+    }
+    .middle-box{
+        height: 10rem;
+        width: 10rem;
+    }
+    
+
+}
+@media screen and(max-width:768px){
+    .flex-container{
+        gap:0.75rem;
+    }
+    .middle-box{
+        height: 5rem;
+        width: 5rem;
+    }
+}
+@media screen  and (max-width:576px){
+    .flex-container{
+        gap:0.5rem;
+    }
+    
+}
+

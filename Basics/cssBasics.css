@@ -1,0 +1,30 @@
+h1{
+    background-color: aquamarine;
+    text-shadow: 2px 2px rgb(1, 1, 20);
+}
+.para{
+    background-color: rgb(11, 244, 244);
+}
+.para>p{
+    text-align: right;
+    line-height: 30px;
+    letter-spacing: 3px;
+    column-count: 5;
+
+}
+/* .para-2{
+    background-color: blue;
+    border: dotted 5px black;
+} */
+p[strong]{
+    color:red;
+}
+
+
+
+
+
+
+
+
+ 

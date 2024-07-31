@@ -1,0 +1,52 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color:bisque;
+    position: relative;
+    animation-name: colorbox;
+    animation-duration: 10s;
+    animation-delay:2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-direction: reverse;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(10,20,30,40);
+    animation-fill-mode: backwards;  
+    /* animation: colorbox 5s linear 2s infinite alternate ; */
+
+}
+@keyframes colorbox{
+    /* from{
+        background-color:rgb(233, 186, 186);
+        width: 300px;
+    }
+    to{
+        background-color:rgb(240, 240, 191);
+        width: 200px;
+    } */
+    0%{
+        background-color: aqua;
+        width: 300px;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: aquamarine;
+        width: 200px;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: bisque;
+        width: 100px;
+        left: 200px;
+        top: 600px;
+    }
+    100%{
+        background-color: antiquewhite;
+        width: 50px;
+        left: 0px;
+        top: 600px;
+    }
+}

@@ -1,0 +1,60 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Courier New', Courier, monospace;
+}
+header{
+    height: 10vh;
+    background-color: darkgray;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: larger;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item{
+    flex: 25%;
+    max-width: 25%;
+    animation-name: gallery;
+    animation-duration:4s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    
+}
+@keyframes gallery {
+    from{
+        flex:25% ;
+        max-width: 25%;
+    }
+    to{
+        flex: 30%;
+        max-width: 30%;
+    }
+    
+}
+.flex-item img{
+    margin-top: 8px;
+    width: 100%;
+}
+@media (max-width:800px){
+    .flex-item{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width:600px){
+    .flex-item{
+        flex: 100%;
+        max-width: 100%; 
+        
+    }
+
+}
+

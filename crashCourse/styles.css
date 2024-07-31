@@ -1,0 +1,78 @@
+/* h1,h2{
+    color: purple;
+}
+p{
+    color: gray;
+}
+.bird{
+    background-color: darkgray;
+}
+header{
+    height: 200px;
+    background-color: rgb(98, 196, 98);
+}
+h1{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 60px;
+}
+nav{
+    background-color: rgb(14, 248, 14);
+    height: 60px;
+
+}
+nav ul {
+    list-style-type: none;
+
+}
+nav ul li{
+    float: left;
+    padding: 20px;
+    font-weight: 600;
+}
+main{
+    background-color: rgb(122, 241, 122);
+    display: flex;
+    flex-direction: row;
+    height: 320px;
+}
+
+article,aside{
+    margin: 10px;
+    background-color: rgb(14, 248, 14);
+    border:1px solid rgb(68, 68, 68);
+}
+
+
+article{
+    width: 60%px;
+    height: 300px;
+}
+aside{
+    width: 30%;
+    height: 300px;
+    
+    
+}
+
+footer{
+    background-color: rgb(98, 196, 98);
+    width: 100%;
+    height: 100px;
+} */
+
+ header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+ }
+.heading{
+    width: 50%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
